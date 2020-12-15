@@ -84,6 +84,7 @@
     }
     /*#endregion TopBar*/
 
+    /*#region contactPage*/
     .BoxBg{
         position: fixed;
         margin-left: 5%;
@@ -105,7 +106,7 @@
         font-size: 24px;
         font-weight: bold;
     }
-
+    /*#endregion contactPage*/
 
     /*#region logIn*/
     .logIn{
@@ -126,9 +127,10 @@
         margin: 0 10px;
     }
     .logIn ul li a{
-        position: relative;
+        position: absolute;
         line-height: 60px;
         font-size: 30px;
+        right: 20%;
         font-weight: 100;
         color: #e5e5e5;
         text-transform: uppercase;
@@ -230,19 +232,20 @@
         z-index: 0;
         cursor: pointer;
         transform: rotate(20deg);
+        transition: ease-in-out .5s;
     }
     img.Logo:hover{
         height: 580px;
         width: 580px;
-        cursor: pointer;
-        transition: ease-in-out .5s;
+        cursor: pointer;       
     }
     .shapedBg{
+        position: absolute;
         float: right;
         height: 1900px;
         width: 1500px;
-        margin-right: -580px;
-        margin-top: -100px;
+        top: 20;
+        right: -30%;
         border-radius: 300px;
         background-color: #141414;
         transform: rotate(-20deg);
@@ -423,6 +426,206 @@
         -webkit-user-drag: none;
         -webkit-touch-callout: none;
     }
+
+    /*#region Media 1650-1300 */
+    @media screen and (max-width: 1650px)
+    {
+    img.Logo{
+        height: 480px;
+        width: 480px;
+    }
+    img.Logo:hover{
+        height: 500px;
+        width: 500px;
+    }
+    .shapedBg{
+        height: 1650px;
+        width: 1450px;
+        right: -34%;
+    }
+    .wtxt{
+        font-size: 30px;
+    }
+    .wtxt2{
+        font-size: 24;
+    }
+    }
+    
+    @media screen and (max-width: 1600px)
+    {
+    img.Logo{
+        height: 480px;
+        width: 480px;
+    }
+    img.Logo:hover{
+        height: 500px;
+        width: 500px;
+    }
+    .shapedBg{
+        height: 1600px;
+        width: 1400px;
+        right: -34%;
+    }
+    }
+
+    @media screen and (max-width: 1550px)
+    {
+    .TopBar ul li a{
+        font-size: 28px;
+    }
+    .logIn ul li a{
+        font-size: 28px;
+    }
+    img.Logo{
+        height: 460px;
+        width: 460px;
+    }
+    img.Logo:hover{
+        height: 480px;
+        width: 480px;
+    }
+    .shapedBg{
+        height: 1400px;
+        width: 1200px;
+        right: -30%;
+    }
+    }
+
+    @media screen and (max-width: 1460px)
+    {
+    img.Logo{
+        position: absolute;
+        height: 440px;
+        width: 440px;
+        z-index: 0;
+        cursor: pointer;
+        transform: rotate(20deg);
+    }
+    img.Logo:hover{
+        height: 460px;
+        width: 460px;
+        cursor: pointer;
+        transition: ease-in-out .5s;
+    }
+    .shapedBg{
+        position: absolute;
+        float: right;
+        height: 1300px;
+        width: 1100px;
+        right: -27%;
+    }
+    }
+
+    @media screen and (max-width: 1400px)
+    {
+        img.Logo{
+            position: absolute;
+            height: 420px;
+            width: 420px;
+            z-index: 0;
+            cursor: pointer;
+            transform: rotate(20deg);
+        }
+        img.Logo:hover{
+            height: 440px;
+            width: 440px;
+            cursor: pointer;
+            transition: ease-in-out .5s;
+        }
+        .shapedBg{
+            position: absolute;
+            float: right;
+            height: 1200px;
+            width: 1000px;
+            right: -24%;
+        }
+    }
+
+    @media screen and (max-width: 1350px)
+    {
+        .wtxt{
+            font-size: 28;
+        }
+        .wtxt2{
+            font-size: 22;
+        }
+    }
+    /*#endregion Media 1300-1000 */
+    /*#region Media 1300-1000 */
+@media screen and (max-width: 1300px)
+{
+
+}
+
+@media screen and (max-width: 1250px)
+{
+
+}
+
+@media screen and (max-width: 1200px)
+{
+
+}
+
+@media screen and (max-width: 1100px)
+{
+
+}
+
+@media screen and (max-width: 1000px)
+{
+
+}
+/*#endregion Media 1300-1000 */
+
+    /*#region Media 900-800 */
+@media screen and (max-width: 900px)
+{
+
+}
+
+@media screen and (max-width: 800px)
+{
+
+}
+/*#endregion Media 900-800 */
+
+    /*#region Media 700-600 */
+@media screen and (max-width: 700px)
+{
+
+}
+
+@media screen and (max-width: 600px)
+{
+
+}
+/*#endregion Media 700-600 */
+
+    /*#region Media 500-400 */
+@media screen and (max-width: 530px)
+{
+
+}
+
+@media screen and (max-width: 500px)
+{    
+
+}
+
+@media screen and (max-width: 400px)
+{
+
+}
+/*#endregion Media 500-400 */
+
+    /*#region Media 350 */
+@media screen and (max-width: 350px)
+{
+
+}
+/*#endregion Media 350 */
+
     /*
     https://www.w3schools.com/css/css_form.asp
 
