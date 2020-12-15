@@ -1,0 +1,429 @@
+    *{
+        padding: 0;
+        margin: 0;
+        text-decoration: none;
+        list-style: none;
+    }
+    body{
+        font-family: "Poppins";
+        background-color:  rgb(204, 148, 43);
+        overflow-x: hidden;
+    }
+
+    /*#region Scrow bar */
+    ::-webkit-scrollbar
+    {
+        width: 10px;
+    }
+
+    ::-webkit-scrollbar-track
+    {
+        background-color: #141414;
+    }
+
+    ::-webkit-scrollbar-thumb
+    {
+        background: grey;
+    }
+
+    ::-webkit-scrollbar-thumb:hover
+    {
+        background: darkgrey;
+    }
+    /*#endregion Scrow bar */
+
+    /*#region TopBar*/
+    .TopBar{
+        background: transparent;
+        height: 120px;
+        width: 100%;
+        animation: EntryAnim .8s;
+    }
+    .TopBar ul{
+        float: left;
+        margin-left: 70px;
+    }
+    .TopBar ul li{
+        display: inline-block;
+        margin: 0 10px;
+    }
+    .TopBar ul li a{
+        position: relative;
+        line-height: 120px;
+        font-size: 30px;
+        font-weight: 100;
+        color: #e5e5e5;
+        text-transform: uppercase;
+        padding: 0px 20px;
+    }
+    .TopBar  a.active{
+        border-radius: 30px;
+        background-color:  #141414;
+        cursor: pointer;
+    }
+    .TopBar ul li a::before{
+        content: "";
+        position: absolute;
+        right: 10px;
+        width: 88%;
+        height: 2px;
+        bottom: 3px;
+        background-color: #141414;
+        visibility: hidden;
+        transform: scaleX(0);
+        
+        transition: ease .3s;
+    }
+    .TopBar ul li a:hover::before{
+        visibility: visible;
+        transform: scaleX(1);
+    }
+    .TopBar  a.active:hover::before{
+        visibility: hidden;
+        transform: scaleX(0);
+    }
+    /*#endregion TopBar*/
+
+    .BoxBg{
+        position: fixed;
+        margin-left: 5%;
+        margin-top: 5%;
+        padding: 10px;
+        background-color: #141414;
+        width: 1650px;
+        height: 800px;
+        border-radius: 60px;
+    }
+    .backBtn{
+        float: left;
+        position: relative;
+        margin-top: 50px;
+        margin-left: 50px;
+    }
+    .backBtn a{
+        color: #e5e5e5;
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+
+    /*#region logIn*/
+    .logIn{
+        background: transparent;
+        height: 60px;
+        width: 100%;
+        margin-top: 30;
+        transform: rotate(20deg);
+    }
+    .logIn ul{
+        float: right;
+        margin-top: -74px;
+        margin-right: 350px;
+        animation: EntryAnim .8s;
+    }
+    .logIn ul li{
+        display: inline-block;
+        margin: 0 10px;
+    }
+    .logIn ul li a{
+        position: relative;
+        line-height: 60px;
+        font-size: 30px;
+        font-weight: 100;
+        color: #e5e5e5;
+        text-transform: uppercase;
+        padding: 0px 20px;
+    }
+    .logIn  a.active{
+        border-radius: 30px;
+        background-color:  rgb(204, 148, 43);
+        cursor: pointer;
+    }
+    .logIn ul li a::before{
+        content: "";
+        position: absolute;
+        right: 10px;
+        width: 88%;
+        height: 2px;
+        bottom: 3px;
+        background-color: rgb(204, 148, 43);
+        visibility: hidden;
+        transform: scaleX(0);
+        
+        transition: ease .3s;
+    }
+    .logIn ul li a:hover::before{
+        visibility: visible;
+        transform: scaleX(1);
+    }
+    .logIn  a.active:hover::before{
+        visibility: hidden;
+        transform: scaleX(0);
+    }
+    /*#endregion logIn*/
+
+    /*#region LogInBox*/
+    .Bg{
+        float: left;
+        height: 550px;
+        width: 500px;
+        margin-left: 90px;
+        margin-top: 90px;
+        border-radius: 40px;
+        background-color: #141414;
+        animation: EntryAnim .8s;
+    }
+    .ltxt{
+        color: #e5e5e5;
+        font-weight: bold;
+        font-size: 26px;
+        text-align: center;
+        margin-top: 130px;
+    }
+    .stxt{
+        color: #e5e5e5;
+        font-weight: bold;
+        font-size: 26px;
+        text-align: center;
+        margin-top: 50px;
+    }
+    input[type=text], select {
+        width: 70%;
+        padding: 12px 20px;
+        margin-top: 30px;
+        margin-left: 72;
+        margin-right: 72;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 40px;
+        box-sizing: border-box;
+    }
+    input[type=submit] {
+        width: 50%;
+        margin-left: 125px;
+        margin-top: 30px;
+        background-color: rgb(204, 148, 43);
+        color: #e5e5e5;
+        padding: 14px 20px;
+        border: none;
+        border-radius: 40px;
+        cursor: pointer;
+    }
+    
+    input[type=submit]:hover {
+        background-color:rgb(204, 148, 43);
+    }
+    .helpTxt{
+        color: #e5e5e5;
+        margin-top: 50px;
+        text-align: center;
+        text-decoration: underline;
+    } 
+    /*#endregion LogInBox*/
+
+    /*#region LOGO*/
+    img.Logo{
+        margin-left: 280px;
+        margin-top: 100px;
+        height: 560px;
+        width: 560px;
+        z-index: 0;
+        cursor: pointer;
+        transform: rotate(20deg);
+    }
+    img.Logo:hover{
+        height: 580px;
+        width: 580px;
+        cursor: pointer;
+        transition: ease-in-out .5s;
+    }
+    .shapedBg{
+        float: right;
+        height: 1900px;
+        width: 1500px;
+        margin-right: -580px;
+        margin-top: -100px;
+        border-radius: 300px;
+        background-color: #141414;
+        transform: rotate(-20deg);
+        animation: FadeIn .8s;
+        z-index: 1000;
+    }
+    /*#endregion LOGO*/
+
+    /*#region Welcome text*/
+    .wtxt{
+        color: #e5e5e5;
+        font-weight: bold;
+        font-size: 32px;
+        margin-left: 90px;
+        margin-top: 250px;
+        animation: EntryAnim .8s;
+    }
+    .wtxt2{
+        color: #e5e5e5;
+        margin-top: 20px;
+        font-weight: normal;
+        font-size: 26;
+        margin-left: 90px;
+        animation: EntryAnim .8s;
+    }
+    /*#endregion Welcome text*/
+
+    /*#region iconBar*/
+    .icon-bar {
+        position: fixed;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+    .icon-bar a {
+        display: block;
+        text-align: center;
+        padding: 16px;
+        transition: all 0.3s ease;
+        color: white;
+        font-size: 20px;
+        animation: EntryAnim .8s;
+    }
+    .icon-bar2 {
+        position: fixed;
+        top: 80%;
+        -webkit-transform: translateX(40%);
+        -ms-transform: translateX(40%);
+        transform: center;
+    }
+    .icon-bar2 a {
+        display: inline;
+        text-align: center;
+        padding: 16px;
+        transition: all 0.3s ease;
+        color: white;
+        font-size: 20px;       
+    }
+    .facebook {
+        color: white;
+    }
+    .facebook:hover {
+        color: rgb(204, 148, 43);
+        background: #141414;
+        cursor: pointer;
+    }
+    
+    .instagram {
+        color: white;
+    }
+    .instagram:hover {
+        color: rgb(204, 148, 43);
+        background: #141414;
+        cursor: pointer;
+    }
+    
+    .phone {
+        color: white;
+    }
+    .phone:hover {
+        color: rgb(204, 148, 43);
+        background: #141414;
+        cursor: pointer;
+    }
+    /*#endregion iconBar*/
+
+    /*#region Animations */
+    @keyframes EntryAnim
+    {
+        0%
+        {
+            transform: translateX(-100px);
+            opacity: 0;
+        }
+
+        100%
+        {
+            transform: translateX(0px);
+            opacity: 1;
+        }
+    }
+
+    @keyframes PopUp
+    {
+        0%
+        {
+            transform: translateY(90px);
+            opacity: 0;
+        }
+
+        100%
+        {
+            transform: translateY(0px);
+            opacity: 1;
+        }
+    }
+    @keyframes popUpSideway
+    {
+        0%
+        {
+            transform: translateX(90px);
+            opacity: 0;
+        }
+
+        100%
+        {
+            transform: translateX(0px);
+            opacity: 1;
+        }
+    }
+    @keyframes MenuBG_Anim
+    {
+        0%
+        {
+            transform: translateX(90px);
+            opacity: 0;
+        }
+
+        100%
+        {
+            transform: translateY(0px);
+            opacity: 1;
+        }
+    }
+
+    @keyframes FadeIn
+    {
+        0% { opacity: 0; }
+        100% { opacity: 1; }
+    }
+
+    @keyframes FadeOut
+    {
+        0% { opacity: 1; }
+        100% { opacity: 0; }
+    }
+
+    @keyframes DefaultAnimation
+    {
+        0%
+        {
+
+        }
+
+        100%
+        {
+
+        }
+    }
+    /*#endregion Animations */
+
+    img{
+        user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        -moz-user-select: none;
+        -webkit-user-drag: none;
+        -webkit-touch-callout: none;
+    }
+    /*
+    https://www.w3schools.com/css/css_form.asp
+
+    */
